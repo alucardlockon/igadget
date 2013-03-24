@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ssh-news" location="0,0" size="0,0">
+    <action name="showAction" location="0,0" size="0,0">
+      <result name="list">
+        <resourceEdge source="list" routing="0" target="list.jsp" />
+      </result>
+      <result name="rightlist">
+        <resourceEdge source="rightlist" routing="0" target="rightlist.jsp" />
+      </result>
+      <result name="detail">
+        <resourceEdge source="detail" routing="0" target="detail.jsp" />
+      </result>
+      <result name="serach">
+        <resourceEdge source="serach" routing="0" target="serach.jsp" />
+      </result>
+    </action>
+    <action name="newsAction" location="0,0" size="0,0">
+      <result name="detail">
+        <resourceEdge source="detail" routing="0" target="detailall.jsp" />
+      </result>
+      <result name="search">
+        <resourceEdge source="search" routing="0" target="allserach.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="ok.jsp" path="/WEB-INF/jsp/ok.jsp" location="78,205" size="150,55" />
+  <webResource name="save.jsp" path="/WEB-INF/jsp/save.jsp" location="353,30" size="150,55" />
+  <webResource name="list.jsp" path="/WEB-INF/list.jsp" location="0,0" size="0,0" />
+  <webResource name="rightlist.jsp" path="/WEB-INF/rightlist.jsp" location="0,0" size="0,0" />
+  <webResource name="detail.jsp" path="/WEB-INF/detail.jsp" location="0,0" size="0,0" />
+  <webResource name="detailall.jsp" path="/WEB-INF/detailall.jsp" location="0,0" size="0,0" />
+  <webResource name="serach.jsp" path="/WEB-INF/serach.jsp" location="0,0" size="0,0" />
+  <webResource name="allserach.jsp" path="/WEB-INF/allserach.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

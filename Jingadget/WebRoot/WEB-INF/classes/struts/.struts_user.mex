@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="ssh-user" location="0,0" size="0,0">
+    <action name="registAction" location="0,0" size="0,0">
+      <result name="toreg">
+        <resourceEdge source="toreg" routing="0" target="regist.jsp" />
+      </result>
+      <result name="toverify">
+        <resourceEdge source="toverify" routing="0" target="verifyuser.jsp" />
+      </result>
+      <result name="verifysuc">
+        <resourceEdge source="verifysuc" routing="0" target="verifysuc.jsp" />
+      </result>
+    </action>
+    <action name="loginAction" location="0,0" size="0,0">
+      <result name="tolog">
+        <resourceEdge source="tolog" routing="0" target="login.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="regist.jsp" path="/WEB-INF/regist.jsp" location="0,0" size="0,0" />
+  <webResource name="verifyuser.jsp" path="/WEB-INF/verifyuser.jsp" location="0,0" size="0,0" />
+  <webResource name="verifysuc.jsp" path="/WEB-INF/verifysuc.jsp" location="0,0" size="0,0" />
+  <webResource name="login.jsp" path="/WEB-INF/login.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

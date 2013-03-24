@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 用户管理 -->
+	<package name="ssh-user" extends="ssh-default" namespace="/user">
+		<action name="registAction" class="registAction">
+			<result name="toreg">/WEB-INF/regist.jsp</result>
+			<result name="toverify">/WEB-INF/verifyuser.jsp</result>
+			<result name="verifysuc">/WEB-INF/verifysuc.jsp</result>
+		</action>
+		<action name="loginAction" class="loginAction">
+			<result name="tolog">/WEB-INF/login.jsp</result>
+			<result type="chain" name="login">
+				<param name="namespace">/</param>
+				<param name="actionName">newsAction</param>
+			</result>
+		</action>
+	</package>
+</struts>    
